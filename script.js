@@ -1,11 +1,12 @@
 
 const menuButton = document.querySelector(".menu-mobile");
+console.log(menuButton);
 const menu = document.querySelector(".menu");
 
 
 
 menuButton.addEventListener("click", () => {
-
+    console.log("clicou");
     menu.classList.toggle("active");
 
 });
@@ -82,7 +83,7 @@ const backToTop = document.querySelector(".back-to-top");
 
 window.addEventListener("scroll", () => {
 
-    if(window.scrollY > 400){
+    if (window.scrollY > 400) {
 
         backToTop.classList.add("active");
 
@@ -96,15 +97,15 @@ window.addEventListener("scroll", () => {
 
 
 
-backToTop.addEventListener("click", (e)=>{
+backToTop.addEventListener("click", (e) => {
 
     e.preventDefault();
 
     window.scrollTo({
 
-        top:0,
+        top: 0,
 
-        behavior:"smooth"
+        behavior: "smooth"
 
     });
 
